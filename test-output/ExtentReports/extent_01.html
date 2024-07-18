@@ -1,0 +1,785 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jul 17, 2024 02:52:24 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">1.Verify Login functionality of ABHI is working</p>
+            <p class="text-sm">
+              <span>2:52:24 pm</span> / <span>00:00:06:129</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">1.Verify Login functionality of ABHI is working</h5>
+<span class='badge badge-success'>07.17.2024 2:52:24 pm</span>
+<span class='badge badge-danger'>07.17.2024 2:52:30 pm</span>
+<span class='badge badge-default'>00:00:06:129</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:24 pm</td>
+        <td>
+          Scenario::: 1.Verify Login functionality of ABHI is working---> Execution started.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:29 pm</td>
+        <td>
+          SuccessFully Captured Statuscode :::200 OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:29 pm</td>
+        <td>
+          SuccessFully Captured Responce :::{"userName":"pratik@abhi.com","message":"Login Successful!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InByYXRpa0BhYmhpLmNvbSIsInJvbGUiOiJBZ2VudCIsIm5iZiI6MTcyMTIwODE0OCwiZXhwIjoxNzIxMjExNzQ4LCJpYXQiOjE3MjEyMDgxNDh9.0gbxvygOpvRF3i0wuvSbOmjrmoTPWaa7gcuosh6fbBw","agencyCode":2001,"agentCode":1002,"verticalCode":13}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:52:30 pm</td>
+        <td>
+          Successfully varified Agent username and Agencey code
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:52:30 pm</td>
+        <td>
+          Successfully varified Login Success message as:::Login Successful!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:30 pm</td>
+        <td>
+          Scenario::: 1.Verify Login functionality of ABHI is working---> Successfully Execution completed.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">2.Verify get Products for Agency is working</p>
+            <p class="text-sm">
+              <span>2:52:30 pm</span> / <span>00:00:00:638</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">2.Verify get Products for Agency is working</h5>
+<span class='badge badge-success'>07.17.2024 2:52:30 pm</span>
+<span class='badge badge-danger'>07.17.2024 2:52:31 pm</span>
+<span class='badge badge-default'>00:00:00:638</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:30 pm</td>
+        <td>
+          Scenario::: 2.Verify get Products for Agency is working---> Execution started.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:31 pm</td>
+        <td>
+          SuccessFully Captured Statuscode :::200 OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:31 pm</td>
+        <td>
+          SuccessFully Captured Responce :::[{"agencycode":2001,"insurancetypecode":101,"verticalcode":13,"channel_name":"Agent","insurancetype":"Health","agencyname":"ABHI"}]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:52:31 pm</td>
+        <td>
+          Successfully varified ChannelName & InsurenceName & AgencyName
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:31 pm</td>
+        <td>
+          Scenario::: 2.Verify get Products for Agency is working---> Successfully Execution completed.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">3.Verify Get Product List For Agency</p>
+            <p class="text-sm">
+              <span>2:52:31 pm</span> / <span>00:00:00:966</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">3.Verify Get Product List For Agency</h5>
+<span class='badge badge-success'>07.17.2024 2:52:31 pm</span>
+<span class='badge badge-danger'>07.17.2024 2:52:32 pm</span>
+<span class='badge badge-default'>00:00:00:966</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:31 pm</td>
+        <td>
+          Scenario::: 3.Verify Get Product List For Agency---> Execution started.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:31 pm</td>
+        <td>
+          SuccessFully Captured Statuscode :::200 OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:31 pm</td>
+        <td>
+          SuccessFully Captured Responce :::[{"agencycode":2001,"insurancetypecode":101,"verticalcode":13,"channel_name":"Agent","insurancetype":"Health","agencyname":"ABHI","productid":"30001001","productname":"Activ Health","productfamily":"Health","familyplan":"Health Retail","productstartdate":"2024-03-14T00:00:00","productenddate":"2025-03-14T00:00:00"},{"agencycode":2001,"insurancetypecode":101,"verticalcode":13,"channel_name":"Agent","insurancetype":"Health","agencyname":"ABHI","productid":"30001002","productname":"Activ Health Plus","productfamily":"Health","familyplan":"Health Retail","productstartdate":"2024-03-14T00:00:00","productenddate":"2025-03-14T00:00:00"},{"agencycode":2001,"insurancetypecode":101,"verticalcode":13,"channel_name":"Agent","insurancetype":"Health","agencyname":"ABHI","productid":"30001003","productname":"Activ One","productfamily":"Health","familyplan":"Health Retail","productstartdate":"2024-03-14T00:00:00","productenddate":"2025-03-14T00:00:00"},{"agencycode":2001,"insurancetypecode":101,"verticalcode":13,"channel_name":"Agent","insurancetype":"Health","agencyname":"ABHI","productid":"30001004","productname":"Activ Secure","productfamily":"Health","familyplan":"Health Retail","productstartdate":"2024-03-14T00:00:00","productenddate":"2025-03-14T00:00:00"},{"agencycode":2001,"insurancetypecode":101,"verticalcode":13,"channel_name":"Agent","insurancetype":"Health","agencyname":"ABHI","productid":"30001005","productname":"Activ Assure","productfamily":"Health","familyplan":"Health Retail","productstartdate":"2024-03-14T00:00:00","productenddate":"2025-03-14T00:00:00"},{"agencycode":2001,"insurancetypecode":101,"verticalcode":13,"channel_name":"Agent","insurancetype":"Health","agencyname":"ABHI","productid":"30001006","productname":"Activ Assure Plus","productfamily":"Health","familyplan":"Health Retail","productstartdate":"2024-03-14T00:00:00","productenddate":"2025-03-14T00:00:00"},{"agencycode":2001,"insurancetypecode":101,"verticalcode":13,"channel_name":"Agent","insurancetype":"Health","agencyname":"ABHI","productid":"30001007","productname":"Activ Fit","productfamily":"Health","familyplan":"Health Retail","productstartdate":"2024-03-14T00:00:00","productenddate":"2025-03-14T00:00:00"},{"agencycode":2001,"insurancetypecode":101,"verticalcode":13,"channel_name":"Agent","insurancetype":"Health","agencyname":"ABHI","productid":"30001008","productname":"Activ Care","productfamily":"Health","familyplan":"Health Retail","productstartdate":"2024-03-14T00:00:00","productenddate":"2025-03-14T00:00:00"},{"agencycode":2001,"insurancetypecode":101,"verticalcode":13,"channel_name":"Agent","insurancetype":"Health","agencyname":"ABHI","productid":"30001009","productname":"Global Health Secure","productfamily":"Health","familyplan":"Health Retail","productstartdate":"2024-03-14T00:00:00","productenddate":"2025-03-14T00:00:00"},{"agencycode":2001,"insurancetypecode":101,"verticalcode":13,"channel_name":"Agent","insurancetype":"Health","agencyname":"ABHI","productid":"30001010","productname":"Arogya Sanjeevni","productfamily":"Health","familyplan":"Health Retail","productstartdate":"2024-03-14T00:00:00","productenddate":"2025-03-14T00:00:00"},{"agencycode":2001,"insurancetypecode":101,"verticalcode":13,"channel_name":"Agent","insurancetype":"Health","agencyname":"ABHI","productid":"30001011","productname":"Super Health Top Up Plan","productfamily":"Health","familyplan":"Health Retail","productstartdate":"2024-03-14T00:00:00","productenddate":"2025-03-14T00:00:00"}]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:52:31 pm</td>
+        <td>
+          Successfully varified ChannelName & InsurenceName & AgencyName
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:52:32 pm</td>
+        <td>
+          Successfully varified Products List
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:32 pm</td>
+        <td>
+          Scenario::: 3.Verify Get Product List For Agency---> Successfully Execution completed.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">4.Verify Get Form Config For a Product</p>
+            <p class="text-sm">
+              <span>2:52:32 pm</span> / <span>00:00:00:431</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">4.Verify Get Form Config For a Product</h5>
+<span class='badge badge-success'>07.17.2024 2:52:32 pm</span>
+<span class='badge badge-danger'>07.17.2024 2:52:32 pm</span>
+<span class='badge badge-default'>00:00:00:431</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:32 pm</td>
+        <td>
+          Scenario::: 4.Verify Get Form Config For a Product---> Execution started.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:32 pm</td>
+        <td>
+          SuccessFully Captured Statuscode :::200 OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:32 pm</td>
+        <td>
+          SuccessFully Captured Responce :::{"agentformsequenceseq":1,"agencycode":2001,"insurancetypecode":101,"productid":"30001001","insureformconfiguration":"[{\"formId\":1,\"formName\":\"Insured Details\"},{\"formId\":2,\"formName\":\"Total Premium\"},{\"formId\":3,\"formName\":\"Lead Creation\"},{\"formId\":4,\"formName\":\"Proposer Details\"},{\"formId\":5,\"formName\":\"Member Details\"},{\"formId\":6,\"formName\":\"Health & Lifestyle\"},{\"formId\":7,\"formName\":\"Previous Insurance/Nominee\"},{\"formId\":8,\"formName\":\"Bank Details\"},{\"formId\":9,\"formName\":\"Declaration\"},{\"formId\":10,\"formName\":\"Registration Mode\"},{\"formId\":11,\"formName\":\"Payment Details\"},{\"formId\":12,\"formName\":\"Thank You\"}]","quoteformconfiguration":null}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:52:32 pm</td>
+        <td>
+          Successfully varified Product ID's
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:52:32 pm</td>
+        <td>
+          Successfully varified InsureFormConfig Data from response body
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:32 pm</td>
+        <td>
+          Scenario::: 4.Verify Get Form Config For a Product---> Successfully Execution completed.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">5.Verify Get Form From Form ID For a Product</p>
+            <p class="text-sm">
+              <span>2:52:32 pm</span> / <span>00:00:00:446</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">5.Verify Get Form From Form ID For a Product</h5>
+<span class='badge badge-success'>07.17.2024 2:52:32 pm</span>
+<span class='badge badge-danger'>07.17.2024 2:52:33 pm</span>
+<span class='badge badge-default'>00:00:00:446</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:32 pm</td>
+        <td>
+          Scenario::: 5.Verify Get Form From Form ID For a Product---> Execution started.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:33 pm</td>
+        <td>
+          SuccessFully Captured Statuscode :::200 OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:33 pm</td>
+        <td>
+          SuccessFully Captured Responce :::{"agentformsseq":25,"agencycode":2001,"insurancetypecode":101,"productid":"30001001","formid":1,"jsonformdata":"{\"formTitle\":\"INSURED MEMBERS\",\"saveBtnTitle\":\"Save\",\"prevBtnTitle\":\"\",\"resetBtnTitle\":\"\",\"calculateBtnTitle\":\"\",\"themeFile\":\"ABHI.css\",\"formSections\":[{\"sectionTitle\":\"Activ Health Plan\",\"visible\":false,\"class\":\"section-title\",\"formControls\":[{\"name\":\"productVariant\",\"label\":\"Product Variant\",\"visibleLabel\":true,\"type\":\"select\",\"value\":\"\",\"visible\":true,\"subType\":\"\",\"class\":\"col-md-4\",\"options\":[{\"name\":\"Platinum\",\"value\":\"Platinum\"}],\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Policy Type is required field.\"}]},{\"name\":\"memberPlan\",\"label\":\"Activ Health Plan\",\"visibleLabel\":true,\"visible\":true,\"type\":\"select\",\"value\":\"\",\"subType\":\"\",\"class\":\"col-md-4\",\"options\":[{\"name\":\"ENHANCED\",\"value\":\"Enhanced Plan\"},{\"name\":\"ESSENTIAL\",\"value\":\"Essential Plan\"},{\"name\":\"PREMIER\",\"value\":\"Premier Plan\"}],\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Plan is required field.\"}]},{\"name\":\"productType\",\"label\":\"Product Type\",\"visibleLabel\":false,\"type\":\"text\",\"value\":\"AH\",\"class\":\"\",\"visible\":false},{\"name\":\"productName\",\"label\":\"Product Name\",\"visibleLabel\":false,\"type\":\"text\",\"value\":\"Active Health\",\"class\":\"\",\"visible\":false},{\"name\":\"productId\",\"label\":\"Product Id\",\"visibleLabel\":false,\"type\":\"text\",\"value\":\"6212\",\"class\":\"\",\"visible\":false},{\"name\":\"planCode\",\"label\":\"Product Code\",\"visibleLabel\":false,\"type\":\"text\",\"value\":\"6212100003\",\"class\":\"\",\"visible\":false},{\"name\":\"memberPlanPolicy\",\"label\":\"Policy Type\",\"visible\":true,\"visibleLabel\":true,\"type\":\"select\",\"value\":\"\",\"subType\":\"\",\"class\":\"col-md-4\",\"options\":[{\"name\":\"New Business\",\"value\":\"New Business\"},{\"name\":\"Portability\",\"value\":\"Portability\"}],\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Policy Type is required field.\"}]}]},{\"sectionTitle\":\"Enter Proposer Details\",\"visible\":true,\"class\":\"section-title\",\"formControls\":[{\"name\":\"memberDobProposer\",\"label\":\"Date of Birth\",\"visibleLabel\":true,\"type\":\"date\",\"value\":\"\",\"class\":\"col-md-4\",\"visible\":true,\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"DOB is required field.\"},{\"validatorName\":\"pattern\",\"pattern\":\"^\\\\d{4}-\\\\d{2}-\\\\d{2}$\",\"message\":\"DOB should be in dd/mm/yyyy format.\"}]},{\"name\":\"memberAgeProposer\",\"label\":\"Age\",\"visibleLabel\":true,\"type\":\"text\",\"value\":\"\",\"visible\":true,\"class\":\"col-md-4\",\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Age is required field.\"},{\"validatorName\":\"pattern\",\"pattern\":\"^(1[8-9]|[2-9][0-9]|1[0-1][0-9]|120)$\",\"message\":\"Age should be greater than 18 and lesser than 120.\"}]},{\"name\":\"proposerGender\",\"label\":\"Gender\",\"visibleLabel\":true,\"type\":\"select\",\"value\":\"\",\"class\":\"col-md-4\",\"visible\":true,\"options\":[{\"name\":\"Male\",\"value\":\"M\"},{\"name\":\"Female\",\"value\":\"F\"},{\"name\":\"Others\",\"value\":\"O\"}],\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Gender is required field.\"}]},{\"name\":\"memberPolicyType\",\"label\":\"Select Policy Type\",\"visibleLabel\":true,\"visible\":true,\"type\":\"select\",\"method\":\"changeMainFormDependentControls\",\"dependentControls\":[\"memberSumInsured\",\"pincode\",\"city\",\"zone\"],\"value\":\"\",\"class\":\"col-md-3\",\"options\":[{\"name\":\"FAMILY FLOATER\",\"value\":\"Family Floater\"},{\"name\":\"MULTI INDIVIDUAL\",\"value\":\"Multi Individual\"}],\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Policy Type is required field.\"}]},{\"name\":\"memberSumInsured\",\"label\":\"Select Sum Insured for Family\",\"visibleLabel\":true,\"visible\":false,\"type\":\"select\",\"value\":\"\",\"class\":\"col-md-3\",\"options\":[{\"name\":\"500000\",\"value\":500000},{\"name\":\"600000\",\"value\":600000},{\"name\":\"700000\",\"value\":700000},{\"name\":\"800000\",\"value\":800000},{\"name\":\"900000\",\"value\":900000},{\"name\":\"1000000\",\"value\":1000000},{\"name\":\"1500000\",\"value\":1500000},{\"name\":\"2000000\",\"value\":2000000},{\"name\":\"2500000\",\"value\":2500000},{\"name\":\"3000000\",\"value\":3000000},{\"name\":\"4000000\",\"value\":4000000},{\"name\":\"5000000\",\"value\":5000000},{\"name\":\"10000000\",\"value\":10000000},{\"name\":\"150000000\",\"value\":150000000},{\"name\":\"20000000\",\"value\":20000000}],\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Sum Insured is required field.\"}]},{\"name\":\"pincode\",\"label\":\"Pincode\",\"visibleLabel\":true,\"visible\":false,\"type\":\"text\",\"value\":\"\",\"class\":\"col-md-4\",\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Pincode is required field.\"}]},{\"name\":\"city\",\"label\":\"City\",\"class\":\"col-md-3\",\"disabled\":true,\"visible\":false,\"visibleLabel\":true,\"value\":\"\",\"type\":\"text\"},{\"name\":\"zone\",\"label\":\"Zone\",\"class\":\"col-md-3\",\"visible\":false,\"visibleLabel\":true,\"disabled\":true,\"value\":\"\",\"type\":\"text\"},{\"name\":\"zoneValue\",\"label\":\"zoneMapValue\",\"class\":\"col-md-2\",\"visibleLabel\":true,\"visible\":false,\"value\":\"\",\"type\":\"text\"},{\"name\":\"state\",\"label\":\"State\",\"class\":\"col-md-2\",\"visibleLabel\":true,\"visible\":false,\"value\":\"\",\"type\":\"text\"}]},{\"sectionTitle\":\"Insured Member Details\",\"visible\":true,\"class\":\"section-title\",\"formControls\":[{\"name\":\"numberOfInsuredMembers\",\"label\":\"Number of Insured Members\",\"text\":\"insuredMemberDetails\",\"visibleLabel\":true,\"type\":\"increment\",\"visible\":false,\"value\":1,\"class\":\"col-md-12\",\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Number of Adults is required field.\"}]},{\"name\":\"insuredMemberDetails\",\"label\":\"Insured Member Details\",\"visibleLabel\":false,\"type\":\"details\",\"value\":1,\"visible\":false,\"class\":\"col-md-12\",\"dynamicControls\":[[{\"name\":\"relationshipType\",\"visibleLabel\":true,\"label\":\"Relationship Type\",\"value\":\"\",\"methodName\":\"getAllRelationship\",\"class\":\"col-md-2 acceptTermsCheck\",\"type\":\"select\",\"visible\":true,\"options\":[]},{\"name\":\"memberdob\",\"label\":\"Date of Birth\",\"visibleLabel\":true,\"type\":\"date\",\"value\":\"\",\"class\":\"col-md-2\",\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"DOB is required field.\"}]},{\"name\":\"memberAge\",\"label\":\"Age\",\"visibleLabel\":true,\"type\":\"text\",\"value\":\"\",\"class\":\"col-md-2\",\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Age is required field.\"}]},{\"name\":\"memberGender\",\"label\":\"Gender\",\"visibleLabel\":true,\"type\":\"select\",\"value\":\"\",\"class\":\"col-md-4\",\"options\":[{\"id\":1,\"name\":\"Male\",\"value\":\"M\"},{\"id\":2,\"name\":\"Female\",\"value\":\"F\"},{\"id\":3,\"name\":\"Others\",\"value\":\"O\"}],\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Gender is required field.\"}]},{\"name\":\"sumInsured\",\"label\":\"Sum Insured\",\"visibleLabel\":true,\"type\":\"select\",\"value\":\"\",\"class\":\"col-md-2\",\"visible\":true,\"options\":[{\"name\":\"500000\",\"value\":500000},{\"name\":\"600000\",\"value\":600000},{\"name\":\"700000\",\"value\":700000},{\"name\":\"800000\",\"value\":800000},{\"name\":\"900000\",\"value\":900000},{\"name\":\"1000000\",\"value\":1000000},{\"name\":\"1500000\",\"value\":1500000},{\"name\":\"2000000\",\"value\":2000000},{\"name\":\"2500000\",\"value\":2500000},{\"name\":\"3000000\",\"value\":3000000},{\"name\":\"4000000\",\"value\":4000000},{\"name\":\"5000000\",\"value\":5000000},{\"name\":\"10000000\",\"value\":10000000},{\"name\":\"150000000\",\"value\":150000000},{\"name\":\"20000000\",\"value\":20000000}]},{\"name\":\"pincode\",\"label\":\"Pincode\",\"visibleLabel\":true,\"type\":\"text\",\"value\":\"\",\"class\":\"col-md-2\"},{\"name\":\"preExistingDisease\",\"label\":\"Pre Existing Disease?\",\"visibleLabel\":true,\"type\":\"radio\",\"class\":\"radio-button\",\"radioOptions\":[{\"name\":\"yes\",\"label\":\"Yes\",\"value\":\"yes\",\"selected\":false},{\"name\":\"no\",\"label\":\"No\",\"value\":\"no\",\"selected\":true}]},{\"name\":\"planType\",\"label\":\"Plan Type\",\"visibleLabel\":false,\"type\":\"text\",\"value\":\"mi\",\"class\":\"\",\"visible\":false},{\"name\":\"memberIndex\",\"label\":\"Member Index\",\"visibleLabel\":false,\"type\":\"text\",\"value\":\"\",\"class\":\"\",\"visible\":false},{\"name\":\"city\",\"label\":\"City\",\"class\":\"col-md-2\",\"disabled\":true,\"visibleLabel\":true,\"value\":\"\",\"type\":\"text\"},{\"name\":\"zone\",\"label\":\"Zone\",\"class\":\"col-md-2\",\"visibleLabel\":true,\"disabled\":true,\"value\":\"\",\"type\":\"text\"},{\"name\":\"zoneValue\",\"label\":\"zoneMapValue\",\"class\":\"col-md-2\",\"visibleLabel\":true,\"visible\":false,\"value\":\"\",\"type\":\"text\"},{\"name\":\"state\",\"label\":\"State\",\"class\":\"col-md-2\",\"visibleLabel\":true,\"visible\":false,\"value\":\"\",\"type\":\"text\"}]]},{\"name\":\"insuredMemberDetails\",\"label\":\"Insured Member Details\",\"visibleLabel\":false,\"type\":\"details\",\"value\":1,\"visible\":false,\"class\":\"col-md-12\",\"dynamicControls\":[[{\"name\":\"relationshipType\",\"visibleLabel\":true,\"label\":\"Relationship Type\",\"value\":\"\",\"methodName\":\"getAllRelationship\",\"class\":\"col-md-3 acceptTermsCheck\",\"type\":\"select\",\"visible\":true,\"options\":[]},{\"name\":\"memberdob\",\"label\":\"Date of Birth\",\"visibleLabel\":true,\"type\":\"date\",\"value\":\"\",\"class\":\"col-md-3\",\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"DOB is required field.\"}]},{\"name\":\"memberAge\",\"label\":\"Age\",\"visibleLabel\":true,\"type\":\"text\",\"value\":\"\",\"class\":\"col-md-3\",\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Age is required field.\"}]},{\"name\":\"memberGender\",\"label\":\"Gender\",\"visibleLabel\":true,\"type\":\"select\",\"value\":\"\",\"class\":\"col-md-3\",\"options\":[{\"name\":\"Male\",\"value\":\"M\"},{\"name\":\"Female\",\"value\":\"F\"},{\"name\":\"Others\",\"value\":\"O\"}],\"validators\":[{\"validatorName\":\"required\",\"required\":true,\"message\":\"Gender is required field.\"}]},{\"name\":\"planType\",\"label\":\"Plan Type\",\"visibleLabel\":false,\"type\":\"text\",\"value\":\"ff\",\"class\":\"\",\"visible\":false},{\"name\":\"memberIndex\",\"label\":\"Member Index\",\"visibleLabel\":false,\"type\":\"text\",\"value\":\"\",\"class\":\"\",\"visible\":false}]]}]}]}"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:52:33 pm</td>
+        <td>
+          Successfully varified Product ID's
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:52:33 pm</td>
+        <td>
+          Successfully varified jsonformdataFromRes Data from response body
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:33 pm</td>
+        <td>
+          Scenario::: 5.Verify Get Form From Form ID For a Product---> Successfully Execution completed.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="41"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">6.verify Insert or Update Form Data For A Journey.</p>
+            <p class="text-sm">
+              <span>2:52:33 pm</span> / <span>00:00:00:321</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">6.verify Insert or Update Form Data For A Journey.</h5>
+<span class='badge badge-success'>07.17.2024 2:52:33 pm</span>
+<span class='badge badge-danger'>07.17.2024 2:52:33 pm</span>
+<span class='badge badge-default'>00:00:00:321</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=41</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:33 pm</td>
+        <td>
+          Scenario::: 6.verify Insert or Update Form Data For A Journey.---> Execution started.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:52:33 pm</td>
+        <td>
+          Successfully varified Insert Form Data response message as :::Form data inserted successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:33 pm</td>
+        <td>
+          SuccessFully Captured Statuscode :::200 OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:33 pm</td>
+        <td>
+          SuccessFully Captured Responce :::{"message":"Form data inserted successfully."}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:33 pm</td>
+        <td>
+          Scenario::: 6.verify Insert or Update Form Data For A Journey.---> Successfully Execution completed.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="47"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">7.TC_007_Verify get pincode details request.</p>
+            <p class="text-sm">
+              <span>2:52:33 pm</span> / <span>00:00:00:300</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">7.TC_007_Verify get pincode details request.</h5>
+<span class='badge badge-success'>07.17.2024 2:52:33 pm</span>
+<span class='badge badge-danger'>07.17.2024 2:52:34 pm</span>
+<span class='badge badge-default'>00:00:00:300</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=47</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:33 pm</td>
+        <td>
+          Scenario::: 7.TC_007_Verify get pincode details request.---> Execution started.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:52:33 pm</td>
+        <td>
+          Successfully varified State 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:34 pm</td>
+        <td>
+          SuccessFully Captured Statuscode :::200 OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:34 pm</td>
+        <td>
+          SuccessFully Captured Responce :::{"npincodemseq":8215,"strcity":"Hyderabad","strcitycode":"HYD","strcreatedby":"SYSTEM","dtcreateddt":"31:39.0","strpincode":"500013","strstate":"TELANGANA","strstatecode":"TE","strtableversion":"1","strtablecd":"130","strupdatedby":"NULL","dtupdateddt":"NULL","strzone":"Zone II","strzonemapping":"Z002","strgststatecode":"36","str_pincode_cab_validation_flag":"NULL","strproductcode":"NULL"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:34 pm</td>
+        <td>
+          Scenario::: 7.TC_007_Verify get pincode details request.---> Successfully Execution completed.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="54"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">8.TC_008 verify post request for Insert Lead Details.</p>
+            <p class="text-sm">
+              <span>2:52:34 pm</span> / <span>00:00:00:598</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">8.TC_008 verify post request for Insert Lead Details.</h5>
+<span class='badge badge-success'>07.17.2024 2:52:34 pm</span>
+<span class='badge badge-danger'>07.17.2024 2:52:34 pm</span>
+<span class='badge badge-default'>00:00:00:598</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=54</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:34 pm</td>
+        <td>
+          Scenario::: 8.TC_008 verify post request for Insert Lead Details.---> Execution started.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:34 pm</td>
+        <td>
+          SuccessFully Captured Statuscode :::200 OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:34 pm</td>
+        <td>
+          SuccessFully Captured Responce :::{"leadId":"LEAD-261444100129211","quoteId":"QUOTE-743204108050587","proposalId":"PROP-545568108442963","message":"Lead Details Inserted Successfully."}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:52:34 pm</td>
+        <td>
+          Successfully varified Lead Details Inserted Successfully Message 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:52:34 pm</td>
+        <td>
+          Scenario::: 8.TC_008 verify post request for Insert Lead Details.---> Successfully Execution completed.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jul 17, 2024 02:52:24 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jul 17, 2024 02:52:34 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>8</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>8</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='27%'><b>12</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>32</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"1.Verify Login functionality of ABHI is working":6.129,"2.Verify get Products for Agency is working":0.638,"3.Verify Get Product List For Agency":0.966,"4.Verify Get Form Config For a Product":0.431,"5.Verify Get Form From Form ID For a Product":0.446,"6.verify Insert or Update Form Data For A Journey.":0.321,"7.TC_007_Verify get pincode details request.":0.3,"8.TC_008 verify post request for Insert Lead Details.":0.598
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 8,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 12,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 32
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

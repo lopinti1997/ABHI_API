@@ -1,0 +1,996 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>ABHI </title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">ABHI</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jul 17, 2024 02:52:22 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jul 17, 2024 02:52:22 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jul 17, 2024 02:52:34 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>8</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>25</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Validating ABHI":10.758
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@ALL</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_006</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_007</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_002</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_001</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_003</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_004</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_008</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC_005</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>AppName</td>
+<td>ABHI</td>
+</tr>
+<tr>
+<td>user</td>
+<td>Paparao</td>
+</tr>
+<tr>
+<td>build</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>JavaVersion</td>
+<td>17.0.11</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 8,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 25,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@ALL</a><a class="dropdown-item" href="#">@TC_006</a><a class="dropdown-item" href="#">@TC_007</a><a class="dropdown-item" href="#">@TC_002</a><a class="dropdown-item" href="#">@TC_001</a><a class="dropdown-item" href="#">@TC_003</a><a class="dropdown-item" href="#">@TC_004</a><a class="dropdown-item" href="#">@TC_008</a><a class="dropdown-item" href="#">@TC_005</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validating ABHI</p>
+            <p class="text-sm">
+              <span>2:52:24 pm</span> / <span>00:00:10:758</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Validating ABHI</h5>
+<span class='badge badge-success'>07.17.2024 2:52:24 pm</span>
+<span class='badge badge-danger'>07.17.2024 2:52:34 pm</span>
+<span class='badge badge-default'>00:00:10:758</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>1.Verify Login functionality of ABHI is working</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.StepDefination.get_the_agent_credentials_from(java.lang.String)">
+                <span>Given get the agent credentials from "TC_001"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.user_calls_agent_login_with_post_http_request_from(java.lang.String)">
+                <span>When user calls AgentLogin with POST http request from "TC_001"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.verifying_the_agent_login_status_code_as(java.lang.String)">
+                <span>Then verifying the AgentLogin status code as "200"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.store_the_responce_and_statuscode_in_to(java.lang.String)">
+                <span>And store the Responce and Statuscode in to "TC_001"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.verifying_and_in_responce_body_as(java.lang.String,java.lang.String,java.lang.String)">
+                <span>And verifying "Username" and "AgencyCode" in responce body as "TC_001"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.verifying_message_from_the_responce_body(java.lang.String)">
+                <span>And verifying "Login Successful!" message from the responce body</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>2.Verify get Products for Agency is working</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.StepDefination.user_calls_get_produts_for_an_agent_with_get_http_request_from(java.lang.String)">
+                <span>When user calls Get produts for an agent with GET http request from "TC_002"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.verifying_and_and_from_responce_body_as(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>Then verifying "ChannelName" and "Insurancetype" and "Agencyname" from responce body as "TC_002"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>3.Verify Get Product List For Agency</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.StepDefination.user_calls_get_product_list_for_an_agency_with_get_http_request_from(java.lang.String)">
+                <span>When user calls Get Product List For an Agency with GET http request from "TC_003"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.verifying_and_and_from_responce_body_as(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>Then verifying "ChannelName" and "Insurancetype" and "Agencyname" from responce body as "TC_003"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.verify_the_all_produt_list_as_expected_or_not()">
+                <span>And verify the all ProdutList as expected or not</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>4.Verify Get Form Config For a Product</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.StepDefination.user_calls_get_form_config_for_a_product_with_get_http_request_from(java.lang.String)">
+                <span>When user calls Get Form Config For a Product with GET http request from "TC_004"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.verifying_product_id_in_get_form_config_fora_product_responce_body_as_we_declared_in_to_query_param_from(java.lang.String)">
+                <span>Then Verifying ProductId in GetFormConfigForaProduct Responce body as we declared in to Query param from "TC_004"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.verifying_insureformconfiguration_data_should_not_be_null_in_responce_body()">
+                <span>And Verifying Insureformconfiguration data should not be Null in responce body</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>5.Verify Get Form From Form ID For a Product</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.StepDefination.user_calls_get_form_from_form_id_for_a_product_with_get_http_request_from(java.lang.String)">
+                <span>When user calls Get Form From Form ID For a Product with GET http request from "TC_005"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.verifying_product_id_in_get_form_from_form_id_fora_product_responce_body_as_we_declared_in_to_query_param_from(java.lang.String)">
+                <span>Then Verifying ProductId in GetFormFromFormIDForaProduct Responce body as we declared in to Query param from "TC_005"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.verifying_jsonformdata_data_should_not_be_null_in_responce_body()">
+                <span>And Verifying Jsonformdata data should not be Null in responce body</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>6.verify Insert or Update Form Data For A Journey.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.StepDefination.user_post_rquest_for_insert_or_update_form_data_for_a_journey_from(java.lang.String)">
+                <span>When user post rquest for Insert or Update Form Data For A Journey from "TC_006".</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.validate_response_body_and_store_it_excell_from(java.lang.String)">
+                <span>Then Validate response body and store it excell from "TC_006".</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>7.TC_007_Verify get pincode details request.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.StepDefination.user_send_get_pincode_request_from_sheet(java.lang.String)">
+                <span>When user send get pincode request from sheet "TC_007".</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.validate_response_body()">
+                <span>Then validate response body.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.store_response_in_sheet(java.lang.String)">
+                <span>And Store response in sheet "TC_007".</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>8.TC_008 verify post request for Insert Lead Details.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinations.StepDefination.user_sent_post_request_for_inserting_lead_details_from_sheet(java.lang.String)">
+                <span>When user sent post request for inserting lead details from sheet "TC_008".</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.strore_leadid_and_quote_id_and_proposal_id_from_response_body_in_the_sheet_from(java.lang.String)">
+                <span>And Strore leadid and quoteId and proposalId from response body in the sheet from "TC_008".</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinations.StepDefination.validate_successfull_message_from_response_body_and_store_the_responce_and_status_code_in_to_excel(java.lang.String)">
+                <span>Then Validate successfull message from response body and Store the responce and status code in to excel "TC_008".</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">9</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+</span>
+<p class="name">@ALL</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ALL</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>1.Verify Login functionality of ABHI is working</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.1.Verify Login functionality of ABHI is working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>2.Verify get Products for Agency is working</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.2.Verify get Products for Agency is working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>3.Verify Get Product List For Agency</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.3.Verify Get Product List For Agency</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>4.Verify Get Form Config For a Product</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.4.Verify Get Form Config For a Product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>5.Verify Get Form From Form ID For a Product</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.5.Verify Get Form From Form ID For a Product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>6.verify Insert or Update Form Data For A Journey.</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.6.verify Insert or Update Form Data For A Journey.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>7.TC_007_Verify get pincode details request.</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.7.TC_007_Verify get pincode details request.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>8.TC_008 verify post request for Insert Lead Details.</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.8.TC_008 verify post request for Insert Lead Details.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_006</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_006</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>6.verify Insert or Update Form Data For A Journey.</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.6.verify Insert or Update Form Data For A Journey.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_007</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_007</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>7.TC_007_Verify get pincode details request.</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.7.TC_007_Verify get pincode details request.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_002</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_002</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>2.Verify get Products for Agency is working</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.2.Verify get Products for Agency is working</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_001</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_001</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>1.Verify Login functionality of ABHI is working</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.1.Verify Login functionality of ABHI is working</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_003</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_003</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>3.Verify Get Product List For Agency</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.3.Verify Get Product List For Agency</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_004</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_004</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>4.Verify Get Form Config For a Product</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.4.Verify Get Form Config For a Product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_008</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_008</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>8.TC_008 verify post request for Insert Lead Details.</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.8.TC_008 verify post request for Insert Lead Details.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC_005</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC_005</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>5.Verify Get Form From Form ID For a Product</a>
+<div class="">
+<span class="badge badge-default">Validating ABHI.5.Verify Get Form From Form ID For a Product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

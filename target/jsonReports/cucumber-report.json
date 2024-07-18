@@ -1,0 +1,170 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-07-18T07:57:50.686Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17951900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "1.Verify Login functionality of ABHI is working",
+        "description": "",
+        "id": "validating-abhi;1.verify-login-functionality-of-abhi-is-working",
+        "after": [
+          {
+            "result": {
+              "duration": 423865900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11964800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "get the agent credentials from \"TC_001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TC_001\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinations.StepDefination.get_the_agent_credentials_from(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2759507300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls AgentLogin with POST http request from \"TC_001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TC_001\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepDefinations.StepDefination.user_calls_agent_login_with_post_http_request_from(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5985500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verifying the AgentLogin status code as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinations.StepDefination.verifying_the_agent_login_status_code_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 382974700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "store the Responce and Statuscode in to \"TC_001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TC_001\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinations.StepDefination.store_the_responce_and_statuscode_in_to(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 773929800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verifying \"Username\" and \"AgencyCode\" in responce body as \"TC_001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Username\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"AgencyCode\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"TC_001\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinations.StepDefination.verifying_and_in_responce_body_as(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21937300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verifying \"Login Successful!\" message from the responce body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login Successful!\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinations.StepDefination.verifying_message_from_the_responce_body(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC_001"
+          },
+          {
+            "name": "@ALL"
+          }
+        ]
+      }
+    ],
+    "name": "Validating ABHI",
+    "description": "",
+    "id": "validating-abhi",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/validateABHI.feature",
+    "tags": []
+  }
+]
