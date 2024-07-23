@@ -23,12 +23,86 @@
 	</properties>
 
 	<dependencies>
+
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>5.4.0</version>
+			<version>5.5.0</version>
 			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+		<!-- To Validate the Json File  -->
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<version>2.9.0</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.10.2</version>
+		</dependency>
+
+
+		<!--https://mvnrepository.com/artifact/com.github.scribejava/scribejava-apis -->
+		<!-- Require for Oauth 1 and Oauth 2 Authentication -->
+
+		<dependency>
+			<groupId>com.github.scribejava</groupId>
+			<artifactId>scribejava-apis</artifactId>
+			<version>8.3.3</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!--https://mvnrepository.com/artifact/com.github.java-json-tools/json-schema-validator -->
+		<!-- To validate the Json scema  -->
+		<dependency>
+			<groupId>com.github.java-json-tools</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>2.2.14</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20240303</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+		<!-- To generates fake data. -->
+		<dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.15.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.34</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
@@ -56,7 +130,6 @@
 			<version>${cucumber.version}</version>
 			<!-- <scope>test</scope> -->
 		</dependency>
-
 		<!--
 		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
@@ -83,13 +156,6 @@
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>3.17</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.15.1</version>
 		</dependency>
 
 		<!-- Extended Report -->
@@ -136,9 +202,19 @@
 			<scope>test</scope>
 		</dependency>
 
-		</dependencies>
+		<!--
+		https://mvnrepository.com/artifact/com.epam.reportportal/agent-java-cucumber5 -->
+		<dependency>
+			<groupId>com.epam.reportportal</groupId>
+			<artifactId>agent-java-cucumber5</artifactId>
+			<version>5.2.2</version>
+		</dependency>
+
+	</dependencies>
 
 	<build>
+		<defaultGoal>install</defaultGoal>
+
 		<plugins>
 
 			<plugin>
@@ -147,12 +223,21 @@
 				<version>2.4</version>
 			</plugin>
 
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M1</version>
+				<version>2.19.1</version>
+				<configuration>
+					<testSourceDirectory>${project.build.testSourceDirectory}</testSourceDirectory>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<includes>
+						<include>**.java</include>
+					</includes>
+				</configuration>
 			</plugin>
+
 
 			<plugin>
 				<groupId>net.masterthought</groupId>
@@ -174,7 +259,6 @@
 							<outputDirectory>
 								target/cucumber-reports/${timestamp}
 							</outputDirectory>
-
 							<cucumberOutput>target/cucumber-reports/</cucumberOutput>
 						</configuration>
 					</execution>

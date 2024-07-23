@@ -14,9 +14,7 @@ public class ExtentReportUtil {
 	     */
 	    public static void initializeExtentReports(String reportFilePath) {
 	        extent = new ExtentReports();
-//            com.aventstack.extentreports.reporter.ExtentSparkReporter spark = new com.aventstack.extentreports.reporter.ExtentSparkReporter("test-output/ExtentReports/extent.html");
-              com.aventstack.extentreports.reporter.ExtentSparkReporter spark = new com.aventstack.extentreports.reporter.ExtentSparkReporter("test-output/SparkReport/Index.html");
-
+            com.aventstack.extentreports.reporter.ExtentSparkReporter spark = new com.aventstack.extentreports.reporter.ExtentSparkReporter("test-output/ExtentReports/extent.html");
 	        extent.attachReporter(spark);
 	    }
 

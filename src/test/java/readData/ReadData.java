@@ -1,8 +1,10 @@
 package readData;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
@@ -205,6 +207,26 @@ public class ReadData {
 		
 	}
 	
+	public static List<String[]> forExtentReports(String sheetName)
+	{
+	        List<String[]> data = new ArrayList<>();
+	        try (FileInputStream fis = new FileInputStream("./TestData/TestData.xlsx");) 
+	        {
+	        	workbook = new XSSFWorkbook(fis);
+	             sheet = workbook.getSheet(sheetName);
+	            for (Row row : sheet) {
+	                List<String> rowData = new ArrayList<>();
+	                for (Cell cell : row) {
+	                    rowData.add(cell.toString());
+	                }
+	                data.add(rowData.toArray(new String[0]));
+	            }
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	        return data;
+	    
+	}
 	
 
 	
@@ -212,6 +234,12 @@ public class ReadData {
 //		System.out.println(fullRowData("TestData","TC_001"));
 //		System.out.println(fullRowData("LoginData","TC_001"));
 //		String url=getCellData("TestData","TC_004","API URL");
-		       
+		       	
+//		List<String[]> data=forExtentReports("TestData");
+//		
+//		for(int i=0; i<data.size(); i++)
+//		{
+//			System.out.println(data.get(i)[i]);
+//		}
 }
 }

@@ -12,36 +12,37 @@ public class StepDefination {
 	// TC_001
 	@Given("get the agent credentials from {string}")
 	public void get_the_agent_credentials_from(String testflow) {
-		ExtentReportUtil.logInfo("STEP::: get the agent credentials from "+testflow );
+		ExtentReportUtil.logInfo("STEP::: get the agent credentials from " + testflow);
 
 		td.getTheAgentCredentials(testflow);
 	}
 
 	@When("user calls AgentLogin with POST http request from {string}")
 	public void user_calls_agent_login_with_post_http_request_from(String testflow) {
-		ExtentReportUtil.logInfo("STEP::: user calls AgentLogin with POST http request from "+testflow );
+		ExtentReportUtil.logInfo("STEP::: user calls AgentLogin with POST http request from " + testflow);
 
 		td.agentLoginWithPOST_HttpRequest(testflow);
 	}
 
 	@Then("verifying the AgentLogin status code as {string}")
 	public void verifying_the_agent_login_status_code_as(String testflow) {
-		ExtentReportUtil.logInfo("STEP::: verifying the AgentLogin status code as "+testflow );
+		ExtentReportUtil.logInfo("STEP::: verifying the AgentLogin status code as " + testflow);
 
 		td.validatingSuccessCode(testflow);
 	}
 
 	@Then("store the Responce and Statuscode in to {string}")
 	public void store_the_responce_and_statuscode_in_to(String testflow) {
-		ExtentReportUtil.logInfo("STEP::: store the Responce and Statuscode in to "+testflow );
+		ExtentReportUtil.logInfo("STEP::: store the Responce and Statuscode in to " + testflow);
 
 		td.storeTheResponceAndStatusCodeInToExcel(testflow);
 	}
 
 	@Then("verifying {string} and {string} in responce body as {string}")
 	public void verifying_and_in_responce_body_as(String expusername, String expAgencyCode, String testflow) {
-		
-		ExtentReportUtil.logInfo("STEP::: verifying "+expusername+" and "+expAgencyCode+" in responce body as "+testflow+" "+testflow );
+
+		ExtentReportUtil.logInfo("STEP::: verifying " + expusername + " and " + expAgencyCode + " in responce body as "
+				+ testflow + " " + testflow);
 
 		expusername = ReadData.getCellData("LoginData", testflow, "AgentUsername");
 		expAgencyCode = ReadData.getCellData("TestData", testflow, "AgencyCode");
@@ -51,7 +52,7 @@ public class StepDefination {
 
 	@Then("verifying {string} message from the responce body")
 	public void verifying_message_from_the_responce_body(String loginMessage) {
-		ExtentReportUtil.logInfo("STEP::: verifying "+loginMessage+" message from the responce body" );
+		ExtentReportUtil.logInfo("STEP::: verifying " + loginMessage + " message from the responce body");
 
 		td.verifyingLoginSuccessMessage(loginMessage);
 	}
