@@ -13,8 +13,8 @@ import io.cucumber.junit.CucumberOptions;
 		 	}, 
 		 monochrome = true 
 //		,dryRun=true
-//		 ,tags= "@ALL"
-		,tags= "@TC_001"
+		 ,tags= "@ALL"
+//		 ,tags= "@TC_001"
 		)
 public class TestRunner {
 
